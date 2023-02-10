@@ -1,0 +1,340 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+#navbar {
+
+    position: fixed;
+}
+
+#navbar ul {
+    display: flex;
+    overflow: auto;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    z-index: -1;
+    opacity: 0.4;
+    width: 250vh;
+
+
+}
+
+#navbar li {
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 10px;
+
+}
+
+#navbar li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    font-weight: bold;
+}
+
+#navbar li a:hover {
+    color: rgb(185, 174, 174);
+    border-radius: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 570px;
+    justify-content: center;
+    padding: 10px 200px;
+    font-weight: bold;
+    color: white;
+
+}
+
+#home::before {
+
+    content: "";
+    background: url('bg2.jpg') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+
+}
+
+#home p {
+    text-align: center;
+    font-size: 20px;
+
+
+}
+
+.primary {
+    font-size: 3.8rem;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+
+}
+
+.h-secondry {
+
+    font-size: 2.8rem;
+    text-align: center;
+
+}
+
+#services {
+    display: flex;
+    margin: 44px;
+
+
+}
+
+#services .box {
+    border: 2px solid black;
+    padding: 34px;
+    margin: 0px 20px;
+    border-radius: 20px;
+    background-color: rgb(218, 218, 218);
+
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+
+
+}
+
+.logo {
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+
+}
+
+
+#client-section {
+    height: 344px;
+
+}
+
+#log {
+
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#log img {
+    height: 124px;
+}
+
+.cilents img {
+    padding: 30px;
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('bg.jpg');
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+
+}
+
+#contact .from-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.from-group input {
+    text-align: center;
+    padding: 6px;
+    margin: 10px 10px;
+    width: 260px;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+.from {
+
+
+    text-align: center;
+
+
+}
+
+.from .bt {
+    width: 275px;
+    font-size: 20px;
+    padding: 6px;
+    margin: 10px 10px;
+    border-radius: 10px;
+
+}
+
+.from .bt:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(248, 3, 3);
+}
+
+@media screen and (max-width: 768px) {
+
+    #services {
+
+        flex-direction: column;
+
+
+    }
+
+    #services .box {
+        padding: 20px;
+        margin: 5px 5px;
+        margin-bottom: 20px;
+        
+    }
+    #services .box img {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    #client-section {
+
+        overflow: hidden;
+
+    }
+
+    #navbar li {
+
+        font-size: 1rem;
+    }
+
+    #home {
+        padding: 3px 20px;
+        height: 470px;
+    }
+
+    #home::before {
+
+        height: 450px;
+    }
+
+    #home p {
+        font-size: 15px;
+    }
+
+    #home h1 {
+        font-size: 23px;
+    }
+
+    .h-primary {
+        font-size: 33px;
+    }
+    .h-secondry {
+
+        font-size: 33px; 
+    }
+
+    .cilents img {
+
+        width: 50px;
+        height: 30px;
+    }
+    .logo {
+        font-size: 33px;
+}
+#contact .primary {
+
+    font-size: 33px;
+    margin-bottom: 30px;
+   
+}
+.from-group input {
+
+    width: 80%;
+    
+}
+.contact-box form {
+
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+    
+}
+.from .bt {
+    width: 85%;
+}
+footer {
+    font-size: 10px;
+    padding: 10px;
+    
+}
+
+#client-section::before {
+    height: 45%;
+}
+
+}
